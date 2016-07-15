@@ -1,2 +1,2 @@
 # loanManagement
-[!image](http://github/Xieyan/loanManagement/screenshots/LoginPage.jng) 
+[!image](https://github.com/Xieyan/loanManagement/blob/master/screenshots/LoginPage.png) 
