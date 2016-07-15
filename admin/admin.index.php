@@ -38,7 +38,7 @@
 	    <div class="row main">
 		<div class="container">
 			<div class=' row col-md-6 col-md-offset-2 custyle'>
-				<h1> Welcome to the Admin page! </h1>
+				<h1> Admin Dashboard </h1>
 				<br/>
 			</div>
 		    <div class="row col-md-7 col-md-offset-2 custyle">
@@ -59,7 +59,7 @@
 					</div>
 					<!-- Title list menu -->
 					<div class="form-group"> 
-						<label for="inputPassword3" class="col-sm-2 control-label">Title</label>
+						<label for="inputPassword3" class="col-sm-2 control-label">Role</label>
 						<label class="radio-inline">
 							<input type="radio" name="optionTitle" id="inlineRadio1" value="manager" > Manager
 						</label>
@@ -73,7 +73,7 @@
 					    </div>
 					</div>
 				</form>
-
+				<hr>
 		    	<!-- display members list-->
 		    	<h3>2. Member list</h3>
 		    	<form class="form-horizontal" method="post" action="#">
@@ -82,7 +82,7 @@
 				        <tr>
 				            <th>ID</th>
 				            <th>Username</th>
-				            <th>Title</th>
+				            <th>Role</th>
 				            <th>Company</th>
 				            <th>Department</th>
 				            <th class="text-center">Action</th>
@@ -117,7 +117,9 @@
 
 			    </table>
 			    </form>
+			    <hr>
 			    <a href="../login.php?status=loggedout" class='btn btn-primary btn-lg btn-block pull-center'> Log Out </a>
+			    </br></br>
 		    </div>
 		</div>
 		</div>

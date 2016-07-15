@@ -15,11 +15,13 @@ class Membership{
 			$query = mysql_query($sql);
 			$row = mysql_fetch_row($query);
 			$role = $row[3];
+			$id = $row[0];
 			//print_r($sql);
 
 			$_SESSION['status'] = 'authorized';
 			$_SESSION['username'] = $un;
 			$_SESSION['role'] = $role;
+			$_SESSION['id'] = $id;
 
 			//link to different role index page.
 			switch ($role){

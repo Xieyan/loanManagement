@@ -3,10 +3,10 @@
 	$mysql = new Mysql();
 
 	if(!(isset($_POST['username'])&&(!empty($_POST['username'])))){
-		echo "<script>alert('Username cannot be empty. Please create an Username.');window.location.href='admin.index.php';</script>";
+		echo "<script>alert('Please enter a username.');window.location.href='admin.index.php';</script>";
 	}
 	else if(!(isset($_POST['password'])&&(!empty($_POST['password'])))){
-		echo "<script>alert('Password cannot be empty. Please create an Password.');window.location.href='admin.index.php';</script>";
+		echo "<script>alert('Please enter a password.');window.location.href='admin.index.php';</script>";
 	}
 	else {
 	$username = $_POST['username'];

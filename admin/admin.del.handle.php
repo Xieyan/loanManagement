@@ -9,6 +9,4 @@
 	}else{
 		echo "<script>alert('Fail to delete users');window.location.href='admin.index.php';</script>";
 	}
-	
-
 ?>

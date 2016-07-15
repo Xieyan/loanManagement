@@ -3,7 +3,11 @@
 	$mysql = new Mysql();
 
 	$id = $_GET['id'];
-	$selectsql = "select id, username, role, company , department from users where id = '$id'";
+	$formname = $_GET['formname'];
+	$sectionNO = $_GET['sectionno'];
+
+	#change status from sections.
+	$selectsql = "select status from sections where id = '$id'";
 	$query = mysql_query($selectsql);
 	$row = mysql_fetch_assoc($query);
 
@@ -24,41 +28,28 @@
         <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 
-        <title>Modify</title>
+        <title>ManagerSectionModify</title>
     </head>
 	<body>
 		<div class="container">
 	    <div class="row main">
 		<div class="container">
 			<div class=' row col-md-6 col-md-offset-2 custyle'>
-				<h1> Admin Edit</h1>
+				<h1>Manager Section Status Change </h1>
 				<br/>
 			</div>
 		    <div class="row col-md-7 col-md-offset-2 custyle">
-				<form class="form-horizontal" method = "post" action = "admin.edit.handle.php" >
+				<form class="form-horizontal" method = "post" action = "manager.sectionstatus.handle.php" >
 					<input type="hidden" name="id" value="<?php echo $id ?>" />
-					<div class="form-group">
-						<label for="exampleInputEmail1">Username:</label>
-						<input type="text" class="form-control" name = "username" id="exampleInputEmail1" value = "<?php echo $row['username']?>">
-					</div>
-
-					<div class="form-group">
-						<label for="exampleInputPassword1">Role:</label>
-						<input type="text" class="form-control" name = "title" id="inputRole" value = "<?php echo $row['role']?>">
-					</div>
 					
 					<div class="form-group">
-						<label for="exampleInputPassword1">Company:</label>
-						<input type="text" class="form-control" name = "company" id="inputCompany" value = "<?php echo $row['company']?>">
+						<label for="exampleInputEmail1"><?php echo $formname?> Section No. <?php echo $sectionNO ?> </label></br>
+						<label>Status:</label>
+						<input type="text" class="form-control" name = "status" id="exampleInputEmail1" value = "<?php echo $row['status']?>">
 					</div>
 
-					<div class="form-group">
-						<label for="exampleInputPassword1">Department:</label>
-						<input type="text" class="form-control" name = "department" id="inputDepartment" value = "<?php echo $row['department']?>">
-					</div>
-					
 					<button type="submit" class="btn btn-success pull-right">Submit</button>
-					<a href="admin.index.php" class='btn btn-danger'> Back To Admin Page </a> 
+					<a href="manager.index.php" class='btn btn-danger'> Back To Viewer Page </a> 
 
 				</form>
 			</div>
@@ -67,3 +58,5 @@
 		</div>
 	</body>
 </html>
+
+	
