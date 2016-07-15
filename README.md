@@ -9,6 +9,7 @@ LoanManagement is a web application system designed for managers and viewers to 
 - (2) Admin dashboard
 - (3) Manager dashboard
 - (4) Viewer dashboard
+
 When LoanManagement receives loan forms, an administrator would be able to view and preprocess the data and later assign the loan forms to respective managers. Following which, managers could assign different sections of the loan form to different staff. Staff would be able to view their task(s) and provide feedback to managers. Managers are also able to reply to the feedback. Once all sections of the loan forms have been verified, managers could aggregate staff feedback to decide on the status of the loan form.
 
 ##1. Login page:
