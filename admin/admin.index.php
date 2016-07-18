@@ -38,7 +38,7 @@
 	    <div class="row main">
 		<div class="container">
 			<div class=' row col-md-6 col-md-offset-2 custyle'>
-				<h1> Admin Dashboard </h1>
+				<h1> System Dashboard </h1>
 				<br/>
 			</div>
 		    <div class="row col-md-7 col-md-offset-2 custyle">
