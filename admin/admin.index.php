@@ -118,6 +118,16 @@
 			    </table>
 			    </form>
 			    <hr>
+			    <!-- Load files -->
+			    <h3>3. Load file:</h3>
+			    <form method="post" action="admin.upload.php" enctype="multipart/form-data">
+					<div class="form-group">
+						<label for="exampleInputFile">File input</label>
+						<input type="file" id="file" name = "file">
+					</div>
+					<button type="submit" name ="submit" class="btn btn-default">Submit</button>
+				</form>
+			    <hr>
 			    <a href="../login.php?status=loggedout" class='btn btn-primary btn-lg btn-block pull-center'> Log Out </a>
 			    </br></br>
 		    </div>
